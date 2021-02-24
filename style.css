@@ -1,17 +1,51 @@
-*{
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+body, html{
     padding: 0;
     margin: 0;
 }
-body{
+*{
+    box-sizing: border-box;
+}
+.bg_img{
     background-image: url("images/corinne-kutz-IJ9BJjxYJO4-unsplash.jpg");
-    background-size: cover;
+    background-color: #0c0c02;
+    filter: blur(0.5em);
+    height: 100vh;
+    width: 100vw;
     background-repeat: no-repeat;
-    background-color: rgb(221, 247, 247);
-    background-attachment: fixed;
-    background-blend-mode: luminosity;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: screen;
+    
 }
 .text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    color: beige;
+    width: 75%;
+    z-index: 1;
+    padding: 2em;
+    border: 0.3em dotted rgb(114, 234, 255);
+    border-radius: 1.2em;
+}
+.text h1{
+    font-size: 6em;
+    color:rgb(196, 252, 252);
+    font-family: 'Satisfy';
+}
+.text h3{
+    font-family: 'Dancing Script';
+    font-size: 3em;
+    color: azure
+}
+.uname{
+    color: rgb(255, 204, 145);
+}
+.text h4{
+    font-family: 'Dancing Script';
+    font-size: 2em;
+    color: rgb(188, 253, 255);
 }
